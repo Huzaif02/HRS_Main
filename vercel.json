@@ -2,14 +2,9 @@
   "version": 2,
   "builds": [
     {
-<<<<<<< HEAD
       "src": "frontend/vite.config.ts",
       "use": "@vercel/static-build",
       "config": { "distDir": "frontend/dist" }
-=======
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build"
->>>>>>> 18b178eefb58fec6ebe93f0d6106eb22c5240af8
     },
     {
       "src": "api/contact.js",
@@ -17,7 +12,6 @@
     }
   ],
   "routes": [
-<<<<<<< HEAD
     {
       "src": "/api/(.*)",
       "dest": "/api/$1.js"
@@ -26,9 +20,5 @@
       "src": "/(.*)",
       "dest": "/frontend/dist/$1"
     }
-=======
-    { "src": "/api/(.*)", "dest": "backend/index.js" },
-    { "src": "/(.*)", "dest": "frontend/dist/index.html" }
->>>>>>> 18b178eefb58fec6ebe93f0d6106eb22c5240af8
   ]
 }
